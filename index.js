@@ -29,7 +29,7 @@ function onScroll(event) {
 
 	/*Sliders*/			
 'use strict';
-    var multiItemSlider = (function () {
+    let multiItemSlider = (function () {
       return function (selector) {
         var
           _mainElement = document.querySelector(selector), 
@@ -47,7 +47,7 @@ function onScroll(event) {
           _items.push({ item: item, position: index, transform: 0 });
         });
 
-        var position = {
+        let position = {
           getItemMin: function () {
             var indexItem = 0;
             _items.forEach(function (item, index) {
